@@ -13,3 +13,5 @@ interval = var[6:11]; print("Slice:", interval) # Slicing allows you to return a
 reverse = var[::-1]; print("Reversed:", reverse) # This slice reverse each word and order of the string
 
 words = var.split(); print("List of string:", words) # This method divide the string into an array of substrings
+
+escape_char = "\"HTML\" is the programming language"; print(escape_char) # To insert characters that are illegal in a string, use an escape character
