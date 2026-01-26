@@ -6,7 +6,7 @@ format = f"It is {var}"; print("Format:", format) # f - way of formatting string
 
 first_char = var[0]; print("First letter:", first_char) # indexing begins from 0
 
-last_char = var[-1]; print("Last letter:", last_char) # last element is -1
+last_char = var[-1]; print("Last letter:", last_char) # index of the last element is -1
 
 interval = var[6:11]; print("Slice:", interval) # World
 
