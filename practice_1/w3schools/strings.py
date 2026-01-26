@@ -8,7 +8,7 @@ first_char = var[0]; print("First letter:", first_char) # indexing begins from 0
 
 last_char = var[-1]; print("Last letter:", last_char) # index of the last element is -1
 
-interval = var[6:11]; print("Slice:", interval) # World
+interval = var[6:11]; print("Slice:", interval) # Slicing allows you to return a specific range in a string
 
 reverse = var[::-1]; print("Reversed:", reverse) # This slice reverse each word and order of the string
 
