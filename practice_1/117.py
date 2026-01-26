@@ -1,4 +1,6 @@
-var1 = input()
-var2 = input()
-swap = var2 + " " + var1
-print(swap)
+words = input().split()
+
+if (len(words) >= 2):
+    words[0], words[1] = words[1], words[0]
+
+print(*words)
