@@ -1,18 +1,28 @@
-num1 = float(input())
-num2 = float(input())
-op = input()
+while True:
+    command = input("Введите команду: ").lower().split()
 
-match op:
-    case "+":
-        print(f"Sum: {num1} + {num2} = {num1+num2}")
-    case "-":
-        print(f"Diff: {num1} - {num2} = {num1-num2}")
-    case "*":
-        print(f"Multi: {num1} * {num2} = {num1*num2}")
-    case "/":
-        if (num2 == 0):
+    match command:
+        case ["exit" | "quit" | "выход" | "q"]:
+            print("Shut down...")
+            break
+
+        case ["add", x, y]:
+            print(f"Result: {float(x) + float(y)}")
+
+        case ["sub", x, y]:
+            print(f"Result: {float(x) - float(y)}")
+
+        case ["mult", x, y]:
+            print(f"Result: {float(x) * float(y)}")
+
+        case ["div", _, "0"]:
+            print("Error: Division by zero is impossible!")
+
+        case ["div", x, y]:
+            print(f"Result: {float(x) / float(y)}")
+
+        case []:
+            continue
+
+        case _:
             print("Error!")
-        else:
-            print(f"Div: {num1} / {num2} = {num1/num2}")
-    case _:
-        print("...")
