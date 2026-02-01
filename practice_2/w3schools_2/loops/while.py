@@ -12,5 +12,5 @@ i = 1
 while i < 6:
     print(i, end=" ")
     if i == 3:
-        break
+        break # loop stops when i == 3
     i += 1
